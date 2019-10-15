@@ -9,7 +9,7 @@ const artistRoutes: Routes = [
         path: '',
         component: ArtistsComponent,
         children: [
-            { path: ':id/detail', component: ArtistDetailComponent },
+            { path: ':id', component: ArtistDetailComponent },
             { path: '', component: ArtistBoardComponent }
         ]
     }
