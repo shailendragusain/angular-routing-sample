@@ -1,14 +1,10 @@
-<div>Artist Board</div>
+<h2>
+    {{title}}
+</h2>
 <div>
-    <input type="text" placeholder="Search" />
-    <div>
-        <button type="button" (click)="showDetail(1)">
-            Billie Eilish
-        </button>
-    </div>
-    <div>
-        <button type="button" (click)="showDetail(2)">
-            Sonu Nigam
-        </button>
+    <div *ngFor="let artist of artists">
+        <a href="javascript:void(0);" (click)="showDetail(artist.artistId)">
+            {{artist.name}}
+        </a>
     </div>
 </div>

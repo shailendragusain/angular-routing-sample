@@ -20,6 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  declarations: [HomeComponent],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
